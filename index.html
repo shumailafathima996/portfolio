@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("portfolio-theme");
+        if (t === "light" || t === "dark") {
+          document.documentElement.setAttribute("data-theme", t);
+        }
+      } catch (e) { /* ignore */ }
+    })();
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shumaila Fathima — CSE Student | AI, Data &amp; Creative Technology</title>
+  <meta name="description" content="Portfolio of Shumaila Fathima, a Computer Science Engineering student building AI-powered and data-driven products — including TrigVerse, Noor AI, JobJenie, and Multilingual News Hub.">
+  <meta name="author" content="Shumaila Fathima">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shumaila Fathima — CSE Student | AI, Data & Creative Technology">
+  <meta property="og:description" content="CSE student building AI-powered and data-driven products. Explore projects in AI accessibility, 3D interactive learning, and multilingual news.">
+  <meta property="og:url" content="https://shumailafathima.dev/">
+  <meta property="og:image" content="assets/social-preview.png">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="site-shell">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Primary">
+      <a class="logo" href="index.html">SHUMAILA</a>
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Work</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme">
+        <span aria-hidden="true">◑</span>
+        <span id="theme-toggle-label">Light mode</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-text">
+          <span class="eyebrow">CSE Student · Aspiring Data Analyst</span>
+          <h1 id="hero-heading" class="hero-name">I build things that make<br>technology feel human.</h1>
+          <p class="hero-tagline">I'm Shumaila Fathima — a Computer Science Engineering student exploring AI, data, and software, turning ideas into working experiences rather than just coursework.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="projects.html">Explore My Work</a>
+            <a class="btn btn-secondary" href="contact.html">Let's Connect</a>
+          </div>
+          <ul class="social-row" aria-label="Social and contact links">
+            <li><a href="https://github.com/shumailafathima996" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/ShumailaFathima" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="mailto:shumailafathima3569@gmail.com">Email</a></li>
+          </ul>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <svg class="orbit-svg" viewBox="0 0 320 320" width="320" height="320">
+            <circle class="ring" cx="160" cy="160" r="150"></circle>
+            <circle class="ring" cx="160" cy="160" r="100"></circle>
+            <circle class="core" cx="160" cy="160" r="26"></circle>
+            <g class="orbit-group">
+              <circle class="node-bg" cx="160" cy="10" r="26"></circle>
+              <text x="160" y="14" text-anchor="middle">AI</text>
+              <circle class="node-bg" cx="290" cy="160" r="26"></circle>
+              <text x="290" y="164" text-anchor="middle">DATA</text>
+              <circle class="node-bg" cx="160" cy="310" r="26"></circle>
+              <text x="160" y="314" text-anchor="middle">CODE</text>
+              <circle class="node-bg" cx="30" cy="160" r="26"></circle>
+              <text x="30" y="164" text-anchor="middle">3D</text>
+              <circle class="node-bg" cx="266" cy="54" r="22"></circle>
+              <text x="266" y="58" text-anchor="middle">UX</text>
+              <circle class="node-bg" cx="54" cy="266" r="22"></circle>
+              <text x="54" y="270" text-anchor="middle">STATS</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="who-heading">
+      <div class="container">
+        <span class="eyebrow">Who I am</span>
+        <h2 id="who-heading">Curious by default, technical by practice.</h2>
+        <p class="section-intro">I'm currently completing my B.E. in Computer Science Engineering at Stanley College of Engineering &amp; Technology for Women, Osmania University, with a CGPA of 9.17. Outside coursework, I build things — an AI voice companion for visually impaired users, a 3D trigonometry lab, a real-time multilingual news translator. I'm drawn to problems where data, AI, and interface design meet.</p>
+        <a href="about.html">More about me →</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="exploring-heading">
+      <div class="container">
+        <span class="eyebrow">Currently exploring</span>
+        <h2 id="exploring-heading">What I'm learning right now</h2>
+        <ul class="tag-row" aria-label="Topics currently exploring">
+          <li class="tag">Data Science</li>
+          <li class="tag">Data Analytics</li>
+          <li class="tag">AI-assisted development</li>
+          <li class="tag">Java</li>
+          <li class="tag">Full-stack development</li>
+          <li class="tag">3D web experiences</li>
+        </ul>
+      </div>
+    </section>
+
+    <section aria-labelledby="featured-heading">
+      <div class="container">
+        <span class="eyebrow">Featured work</span>
+        <h2 id="featured-heading">A few things I've built</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Noor AI</h3>
+            <p>An offline-first voice companion for visually impaired users — SOS alerts, medicine reminders, indoor navigation.</p>
+            <a href="projects.html#noor-ai">View case study →</a>
+          </article>
+          <article class="card">
+            <h3>TrigVerse</h3>
+            <p>A 3D holographic trigonometry learning lab with real-time AI mentorship, built with React Three Fiber and Gemini.</p>
+            <a href="projects.html#trigverse">View case study →</a>
+          </article>
+          <article class="card">
+            <h3>Multilingual News Hub</h3>
+            <p>A Streamlit app that fetches global news and translates it into Hindi, Telugu, Urdu, and English in real time.</p>
+            <a href="projects.html#news-hub">View case study →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>&copy; 2026 Shumaila Fathima. Built with semantic HTML5.</p>
+      <p><a href="mailto:shumailafathima3569@gmail.com">shumailafathima3569@gmail.com</a></p>
+    </div>
+  </footer>
+  <script src="js/theme.js" defer></script>
+</body>
+</html>

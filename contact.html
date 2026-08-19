@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("portfolio-theme");
+        if (t === "light" || t === "dark") {
+          document.documentElement.setAttribute("data-theme", t);
+        }
+      } catch (e) { /* ignore */ }
+    })();
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Shumaila Fathima</title>
+  <meta name="description" content="Get in touch with Shumaila Fathima — CSE student and aspiring Data Analyst, open to internships and collaboration.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact — Shumaila Fathima">
+  <meta property="og:description" content="Have an idea worth building? Get in touch.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="site-shell">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Primary">
+      <a class="logo" href="index.html">SHUMAILA</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Work</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme">
+        <span aria-hidden="true">◑</span>
+        <span id="theme-toggle-label">Light mode</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section aria-labelledby="contact-heading">
+      <div class="container">
+        <span class="eyebrow">Contact</span>
+        <h1 id="contact-heading">Have an idea worth building?</h1>
+        <p class="section-intro">I'm open to Data Analyst / Data Science internships and collaboration on meaningful projects. The fastest way to reach me is email — the form below works too.</p>
+
+        <div class="contact-grid">
+          <div>
+            <h2 class="visually-hidden">Contact details</h2>
+            <ul class="contact-info-list">
+              <li>
+                <span class="label">Email</span>
+                <a href="mailto:shumailafathima3569@gmail.com">shumailafathima3569@gmail.com</a>
+              </li>
+              <li>
+                <span class="label">Phone</span>
+                <a href="tel:+919063235010">+91 90632 35010</a>
+              </li>
+              <li>
+                <span class="label">Location</span>
+                <span>Hyderabad, India</span>
+              </li>
+              <li>
+                <span class="label">GitHub</span>
+                <a href="https://github.com/shumailafathima996" target="_blank" rel="noopener noreferrer">github.com/shumailafathima996</a>
+              </li>
+              <li>
+                <span class="label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/ShumailaFathima" target="_blank" rel="noopener noreferrer">linkedin.com/in/ShumailaFathima</a>
+              </li>
+              <li>
+                <span class="label">Resume</span>
+                <span class="placeholder-note" style="display:inline-block; margin-top:0.4rem;">Link a hosted PDF resume here once available</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <form action="#" method="post" novalidate aria-labelledby="form-heading">
+              <fieldset>
+                <legend id="form-heading">Send a message</legend>
+
+                <div class="form-field">
+                  <label for="name">Full name</label>
+                  <input type="text" id="name" name="name" autocomplete="name" required aria-required="true">
+                </div>
+
+                <div class="form-field">
+                  <label for="email">Email address</label>
+                  <input type="email" id="email" name="email" autocomplete="email" required aria-required="true" aria-describedby="email-hint">
+                  <p id="email-hint" class="hint">I'll reply to this address directly.</p>
+                </div>
+
+                <div class="form-field">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" name="subject" autocomplete="off">
+                </div>
+
+                <div class="form-field">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required aria-required="true" rows="6"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Send message</button>
+              </fieldset>
+            </form>
+            <p class="placeholder-note">This form is static for now (Task 1 covers structure only). It'll be wired to a real submission handler in a later task.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>&copy; 2026 Shumaila Fathima. Built with semantic HTML5.</p>
+      <p><a href="mailto:shumailafathima3569@gmail.com">shumailafathima3569@gmail.com</a></p>
+    </div>
+  </footer>
+  <script src="js/theme.js" defer></script>
+</body>
+</html>

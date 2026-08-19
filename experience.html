@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("portfolio-theme");
+        if (t === "light" || t === "dark") {
+          document.documentElement.setAttribute("data-theme", t);
+        }
+      } catch (e) { /* ignore */ }
+    })();
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience — Shumaila Fathima</title>
+  <meta name="description" content="Internship and simulation experience of Shumaila Fathima across AI development, data analytics, and Deloitte Australia's Data Analytics Job Simulation.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Experience — Shumaila Fathima">
+  <meta property="og:description" content="Internships in AI development and data analytics, including Deloitte Australia's Data Analytics Job Simulation.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="site-shell">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Primary">
+      <a class="logo" href="index.html">SHUMAILA</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Work</a></li>
+        <li><a href="experience.html" aria-current="page">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme">
+        <span aria-hidden="true">◑</span>
+        <span id="theme-toggle-label">Light mode</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section aria-labelledby="exp-heading">
+      <div class="container">
+        <span class="eyebrow">Experience</span>
+        <h1 id="exp-heading">Hands-on learning, one internship at a time</h1>
+        <p class="section-intro">I'm early in my career, and I've used internships and simulations deliberately — to work with real data, real constraints, and real feedback loops rather than staying in coursework.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="timeline-heading">
+      <div class="container">
+        <h2 id="timeline-heading" class="visually-hidden">Internship timeline</h2>
+        <ol style="list-style: none; padding: 0; margin: 0;">
+          <li class="timeline-item">
+            <h3>AI Development Intern</h3>
+            <p class="timeline-role">Indian Servers AI &amp; Cyber Security</p>
+            <ul>
+              <li>Engineered TrigVerse, a 3D holographic trigonometry learning lab, using Next.js, React Three Fiber, and Framer Motion — turning abstract math concepts into interactive 3D visualizations.</li>
+              <li>Integrated Google Gemini AI to power real-time, gamified mentorship, increasing learner engagement through adaptive feedback.</li>
+            </ul>
+          </li>
+          <li class="timeline-item">
+            <h3>Data Analytics Intern (Simulation)</h3>
+            <p class="timeline-role">E-commerce Sales Analysis</p>
+            <ul>
+              <li>Processed and analyzed 10,000+ sales records using Python, Pandas, and NumPy to uncover customer behavior patterns.</li>
+              <li>Built interactive Tableau and Matplotlib dashboards translating raw transaction data into actionable business insights.</li>
+            </ul>
+          </li>
+          <li class="timeline-item">
+            <h3>Data Analytics Job Simulation</h3>
+            <p class="timeline-role">Deloitte Australia (Forage)</p>
+            <ul>
+              <li>Built Tableau dashboards and applied Excel-based classification techniques to segment business data.</li>
+              <li>Applied data modeling methods to convert raw datasets into business-ready insights and recommendations.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section aria-labelledby="achievements-heading">
+      <div class="container">
+        <span class="eyebrow">Achievements &amp; activities</span>
+        <h2 id="achievements-heading">Beyond internships</h2>
+        <p class="section-intro">I actively look for opportunities to build, present, and experiment outside coursework — hackathons, exhibitions, and technology communities.</p>
+        <div class="placeholder-note">Add specific hackathon names, dates, and outcomes here (e.g. the women's hackathon, project exhibitions, CSI involvement) once confirmed — kept as a placeholder rather than invented.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>&copy; 2026 Shumaila Fathima. Built with semantic HTML5.</p>
+      <p><a href="mailto:shumailafathima3569@gmail.com">shumailafathima3569@gmail.com</a></p>
+    </div>
+  </footer>
+  <script src="js/theme.js" defer></script>
+</body>
+</html>

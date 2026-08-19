@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("portfolio-theme");
+        if (t === "light" || t === "dark") {
+          document.documentElement.setAttribute("data-theme", t);
+        }
+      } catch (e) { /* ignore */ }
+    })();
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Shumaila Fathima</title>
+  <meta name="description" content="Featured projects by Shumaila Fathima: Noor AI, TrigVerse, Multilingual News Hub, and JobJenie — spanning accessibility, 3D learning, and AI-powered tools.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects — Shumaila Fathima">
+  <meta property="og:description" content="Featured projects: Noor AI, TrigVerse, Multilingual News Hub, JobJenie.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="site-shell">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Primary">
+      <a class="logo" href="index.html">SHUMAILA</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" aria-current="page">Work</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme">
+        <span aria-hidden="true">◑</span>
+        <span id="theme-toggle-label">Light mode</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section aria-labelledby="projects-heading">
+      <div class="container">
+        <span class="eyebrow">Featured work</span>
+        <h1 id="projects-heading">Projects I've built and shipped</h1>
+        <p class="section-intro">Each of these started as a real question I wanted to answer — not an assignment. Case studies below cover the problem, the build, and what it does today.</p>
+      </div>
+    </section>
+
+    <section aria-label="Featured project case studies">
+      <div class="container">
+
+        <article class="project-case" id="noor-ai" aria-labelledby="noor-heading">
+          <span class="eyebrow">Solo project · Accessibility &amp; AI</span>
+          <h2 id="noor-heading">Noor AI — voice companion for the visually impaired</h2>
+          <p>"Light for independence." An offline-first voice assistant built to give visually impaired users more independence in daily life — without depending on a constant internet connection.</p>
+          <div class="case-grid">
+            <div>
+              <h4>Problem</h4>
+              <p>Visually impaired users often depend on others for routine tasks — medication timing, indoor navigation, reaching help in an emergency.</p>
+            </div>
+            <div>
+              <h4>Solution</h4>
+              <p>A voice-first assistant handling SOS alerts, medicine and hydration reminders, indoor guidance, and time/date assistance, built to keep working without a constant connection.</p>
+            </div>
+            <div>
+              <h4>Technology</h4>
+              <p>HTML, CSS, JavaScript, Node.js, Web Speech API.</p>
+            </div>
+            <div>
+              <h4>Impact</h4>
+              <p>Aligned with three UN Sustainable Development Goals: Quality Education, Reduced Inequalities, and Good Health &amp; Well-being.</p>
+            </div>
+          </div>
+          <ul class="tag-row" aria-label="Noor AI features">
+            <li class="tag">Voice interaction</li>
+            <li class="tag">Emergency SOS</li>
+            <li class="tag">Medicine reminders</li>
+            <li class="tag">Indoor guidance</li>
+          </ul>
+          <div class="placeholder-note">Add GitHub / live demo link here once submitted.</div>
+        </article>
+
+        <article class="project-case" id="trigverse" aria-labelledby="trigverse-heading">
+          <span class="eyebrow">Internship project · Indian Servers AI &amp; Cyber Security</span>
+          <h2 id="trigverse-heading">TrigVerse — a 3D trigonometry learning lab</h2>
+          <p>An interactive 3D environment that turns abstract trigonometry into something you can see and manipulate, with an AI mentor guiding the way.</p>
+          <div class="case-grid">
+            <div>
+              <h4>Problem</h4>
+              <p>Trigonometry is usually taught through static diagrams and formulas, which makes it hard for students to build real intuition.</p>
+            </div>
+            <div>
+              <h4>Solution</h4>
+              <p>A 3D holographic unit circle with real-time sine/cosine visualization, dynamic formulas, and AI-powered explanations layered on top.</p>
+            </div>
+            <div>
+              <h4>Technology</h4>
+              <p>Next.js, React, React Three Fiber, Framer Motion, Google Gemini API.</p>
+            </div>
+            <div>
+              <h4>Impact</h4>
+              <p>Integrated Gemini AI for real-time, gamified mentorship — increasing learner engagement through adaptive feedback.</p>
+            </div>
+          </div>
+          <ul class="tag-row" aria-label="TrigVerse features">
+            <li class="tag">3D unit circle</li>
+            <li class="tag">Gamified learning</li>
+            <li class="tag">AI explanations</li>
+          </ul>
+          <div class="placeholder-note">Add GitHub / live demo link here once submitted.</div>
+        </article>
+
+        <article class="project-case" id="news-hub" aria-labelledby="news-heading">
+          <span class="eyebrow">Solo project · AI &amp; Data</span>
+          <h2 id="news-heading">Multilingual News Hub</h2>
+          <p>A real-time news translator built for readers who are more comfortable in Hindi, Telugu, or Urdu than English.</p>
+          <div class="case-grid">
+            <div>
+              <h4>Problem</h4>
+              <p>Most real-time news aggregation tools only serve English-language readers, leaving out large multilingual audiences.</p>
+            </div>
+            <div>
+              <h4>Solution</h4>
+              <p>An app that collects news via RSS feeds and translates full articles into Hindi, Telugu, Urdu, and English on demand.</p>
+            </div>
+            <div>
+              <h4>Technology</h4>
+              <p>Python, Streamlit, Feedparser, BeautifulSoup, SQLite, Deep Translator.</p>
+            </div>
+            <div>
+              <h4>Impact</h4>
+              <p>Makes real-time global news genuinely accessible across four languages from a single interface.</p>
+            </div>
+          </div>
+          <ul class="tag-row" aria-label="Multilingual News Hub features">
+            <li class="tag">Real-time RSS</li>
+            <li class="tag">4 languages</li>
+            <li class="tag">Full-article translation</li>
+          </ul>
+          <div class="placeholder-note">Add GitHub / live demo link here once submitted.</div>
+        </article>
+
+        <article class="project-case" id="jobjenie" aria-labelledby="jobjenie-heading">
+          <span class="eyebrow">Solo project · AI Career Platform</span>
+          <h2 id="jobjenie-heading">JobJenie — AI career guidance platform</h2>
+          <p>An end-to-end career platform that consolidates the job-search process into one workflow instead of five disconnected tools.</p>
+          <div class="case-grid">
+            <div>
+              <h4>Problem</h4>
+              <p>Job seekers juggle separate tools for resume review, job discovery, and interview prep, with no single place tying it together.</p>
+            </div>
+            <div>
+              <h4>Solution</h4>
+              <p>A single platform combining resume analysis, automated job search, and interview preparation.</p>
+            </div>
+            <div>
+              <h4>Technology</h4>
+              <p>Details to be finalized — add stack once repository is published.</p>
+            </div>
+            <div>
+              <h4>Impact</h4>
+              <p>Replaces the need for multiple disconnected tools in a job seeker's workflow.</p>
+            </div>
+          </div>
+          <div class="placeholder-note">Add tech stack, key features, and GitHub / live demo link here.</div>
+        </article>
+
+      </div>
+    </section>
+
+    <section aria-labelledby="supporting-heading">
+      <div class="container">
+        <span class="eyebrow">Supporting projects</span>
+        <h2 id="supporting-heading">More on GitHub</h2>
+        <p class="section-intro">Smaller builds and experiments live on my GitHub — this section will grow as more get published and documented.</p>
+        <div class="placeholder-note">Add supporting projects (e.g. dashboards, games, hackathon builds) here with real names, links, and descriptions once confirmed.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>&copy; 2026 Shumaila Fathima. Built with semantic HTML5.</p>
+      <p><a href="mailto:shumailafathima3569@gmail.com">shumailafathima3569@gmail.com</a></p>
+    </div>
+  </footer>
+  <script src="js/theme.js" defer></script>
+</body>
+</html>

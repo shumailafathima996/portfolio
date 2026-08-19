@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("portfolio-theme");
+        if (t === "light" || t === "dark") {
+          document.documentElement.setAttribute("data-theme", t);
+        }
+      } catch (e) { /* ignore */ }
+    })();
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Shumaila Fathima</title>
+  <meta name="description" content="About Shumaila Fathima: a Computer Science Engineering student with a 9.17 CGPA, working across AI, data analytics, and creative technology.">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="About — Shumaila Fathima">
+  <meta property="og:description" content="CSE student building AI-powered and data-driven products.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="site-shell">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Primary">
+      <a class="logo" href="index.html">SHUMAILA</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="projects.html">Work</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme">
+        <span aria-hidden="true">◑</span>
+        <span id="theme-toggle-label">Light mode</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section aria-labelledby="about-heading">
+      <div class="container">
+        <span class="eyebrow">About</span>
+        <h1 id="about-heading">A student who thinks like a builder.</h1>
+        <p class="section-intro">I'm a Computer Science Engineering student who learns by shipping — not just by finishing assignments. Whether it's an accessibility-first voice assistant or a data pipeline processing thousands of records, I care about the same thing: whether the thing actually works for the person using it.</p>
+        <p class="section-intro">I move between two worlds fairly naturally — the analytical side (Python, SQL, Pandas, dashboards, statistical thinking) and the builder side (React, Next.js, 3D web experiences, AI integrations). I'd rather understand a problem properly and build a working version than talk about it in the abstract.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="education-heading">
+      <div class="container">
+        <span class="eyebrow">Education</span>
+        <h2 id="education-heading">Academic background</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>B.E. Computer Science Engineering</h3>
+            <p>Stanley College of Engineering &amp; Technology for Women, Osmania University</p>
+            <p><strong>CGPA:</strong> 9.17 · In progress</p>
+          </article>
+          <article class="card">
+            <h3>Intermediate (MPC)</h3>
+            <p>S.R. Junior College</p>
+            <p><strong>2024</strong> · 97%</p>
+          </article>
+          <article class="card">
+            <h3>SSC</h3>
+            <p>St. Joseph's Convent High School</p>
+            <p><strong>2022</strong> · 97%</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="skills-heading">
+      <div class="container">
+        <span class="eyebrow">Technology</span>
+        <h2 id="skills-heading">Skills, grouped by how I actually use them</h2>
+        <div class="grid">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <ul>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>Java</li>
+              <li>C</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Data</h3>
+            <ul>
+              <li>Pandas / NumPy</li>
+              <li>Tableau</li>
+              <li>Power BI</li>
+              <li>Matplotlib</li>
+              <li>Statistical analysis &amp; EDA</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Web</h3>
+            <ul>
+              <li>React / Next.js</li>
+              <li>Node.js</li>
+              <li>Streamlit</li>
+              <li>HTML / CSS / JavaScript</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>3D &amp; Interactive</h3>
+            <ul>
+              <li>React Three Fiber</li>
+              <li>Framer Motion</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>AI</h3>
+            <ul>
+              <li>Google Gemini API</li>
+              <li>Prompt engineering</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Tools &amp; Foundations</h3>
+            <ul>
+              <li>Git / GitHub</li>
+              <li>VS Code / Google Colab</li>
+              <li>Data Structures &amp; DBMS</li>
+              <li>Object-Oriented Programming</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="certs-heading">
+      <div class="container">
+        <span class="eyebrow">Certifications</span>
+        <h2 id="certs-heading">Continued learning</h2>
+        <ul>
+          <li>Power BI Workshop — Data Visualization and Reporting</li>
+          <li>AI Tools Workshop — Upskilling in Emerging Technologies</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>&copy; 2026 Shumaila Fathima. Built with semantic HTML5.</p>
+      <p><a href="mailto:shumailafathima3569@gmail.com">shumailafathima3569@gmail.com</a></p>
+    </div>
+  </footer>
+  <script src="js/theme.js" defer></script>
+</body>
+</html>
